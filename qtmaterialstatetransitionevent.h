@@ -4,7 +4,7 @@
 #include <QEvent>
 
 enum QtMaterialStateTransitionType {
-    // Snackbar
+    // gSnackbar
     SnackbarShowTransition = 1,
     SnackbarHideTransition,
     SnackbarWaitTransition,
