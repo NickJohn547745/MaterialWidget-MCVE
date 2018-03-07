@@ -38,7 +38,7 @@ QString QtMaterialBadgePlugin::group() const
 
 QIcon QtMaterialBadgePlugin::icon() const
 {
-    return QIcon();
+    return QIcon("://qtmaterialbadgeicon.png");
 }
 
 QString QtMaterialBadgePlugin::toolTip() const
@@ -58,11 +58,31 @@ bool QtMaterialBadgePlugin::isContainer() const
 
 QString QtMaterialBadgePlugin::domXml() const
 {
-    return QLatin1String("<widget class=\"QtMaterialBadge\" name=\"qtMaterialBadge\">\n<widget>\n");
+    return "<ui language=\"c++\">\n"
+           " <widget class=\"QtMaterialBadge\" name=\"qtMaterialBadge\">\n"
+           "  <property name=\"geometry\">\n"
+           "   <rect>\n"
+           "    <x>0</x>\n"
+           "    <y>0</y>\n"
+           "    <width>30</width>\n"
+           "    <height>30</height>\n"
+           "   </rect>\n"
+           "  </property>\n"
+           "  <property name=\"minimumSize\">"
+           "  <size>"
+           "  <width>30</width>"
+           "  <height>30</height>"
+           "  </size>"
+           "  </property>"
+           " </widget>\n"
+           "</ui>\n";
 }
 
 QString QtMaterialBadgePlugin::includeFile() const
 {
-    return QLatin1String("qtmaterialbadge.h");
+    return QLatin1String("<QtMaterialWidgets/qtmaterialbadge.h>");
 }
 
+#if QT_VERSION < 0x050000
+Q_EXPORT_PLUGIN2(qtmaterialbadgeplugin, QtMaterialBadgePlugin)
+#endif // QT_VERSION < 0x050000

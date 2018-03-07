@@ -1,7 +1,8 @@
-//#include "qtmaterialappbarplugin.h"
-//#include "qtmaterialautocompleteplugin.h"
-//#include "qtmaterialavatarplugin.h"
 #include "qtmaterialbadgeplugin.h"
+#include "qtmaterialappbarplugin.h"
+#include "qtmaterialautocompleteplugin.h"
+
+//#include "qtmaterialavatarplugin.h"
 //#include "qtmaterialcheckboxplugin.h"
 //#include "qtmaterialcircularprogressplugin.h"
 //#include "qtmaterialdialogplugin.h"
@@ -24,12 +25,12 @@
 QtMaterialWidgets::QtMaterialWidgets(QObject *parent)
     : QObject(parent)
 {
-    /*m_widgets.append(new QtMaterialAppBarPlugin(this));
-    m_widgets.append(new QtMaterialAutoCompletePlugin(this));
-    m_widgets.append(new QtMaterialAvatarPlugin(this));
-    */
+    m_widgets.append(new QtMaterialAppBarPlugin(this));
     m_widgets.append(new QtMaterialBadgePlugin(this));
+    m_widgets.append(new QtMaterialAutoCompletePlugin(this));
+
     /*
+    m_widgets.append(new QtMaterialAvatarPlugin(this));
     m_widgets.append(new QtMaterialCheckBoxPlugin(this));
     m_widgets.append(new QtMaterialCircularProgressPlugin(this));
     m_widgets.append(new QtMaterialDialogPlugin(this));
@@ -54,7 +55,3 @@ QList<QDesignerCustomWidgetInterface*> QtMaterialWidgets::customWidgets() const
 {
     return m_widgets;
 }
-
-#if QT_VERSION < 0x050000
-Q_EXPORT_PLUGIN2(qtmaterialwidgetsplugin, QtMaterialWidgets)
-#endif  QT_VERSION < 0x050000

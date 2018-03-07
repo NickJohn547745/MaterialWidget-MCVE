@@ -1,25 +1,24 @@
-QT          += widgets uiplugin
+QT          += designer uiplugin
 CONFIG      += plugin
 TEMPLATE    = lib
 
 TARGET      =   $$qtLibraryTarget(qtmaterialwidgetsplugin)
-HEADERS     =   qtmaterialbadgeplugin.h qtmaterialwidgets.h
-#qtmaterialappbarplugin.h qtmaterialautocompleteplugin.h qtmaterialavatarplugin.h
-#qtmaterialcheckboxplugin.h qtmaterialcircularprogressplugin.h qtmaterialdialogplugin.h qtmaterialdrawerplugin.h
+HEADERS     =   qtmaterialbadgeplugin.h qtmaterialwidgets.h qtmaterialappbarplugin.h qtmaterialautocompleteplugin.h
+#qtmaterialavatarplugin.h qtmaterialcheckboxplugin.h qtmaterialcircularprogressplugin.h qtmaterialdialogplugin.h qtmaterialdrawerplugin.h
 #qtmaterialfabplugin.h qtmaterialflatbuttonplugin.h qtmaterialiconbuttonplugin.h qtmaterialmenuplugin.h
 #qtmaterialprogressplugin.h qtmaterialradiobuttonplugin.h qtmaterialraisedbuttonplugin.h qtmaterialscrollbarplugin.h
 #qtmaterialsliderplugin.h qtmaterialsnackbarplugin.h qtmaterialtabsplugin.h qtmaterialtextfieldplugin.h
 #qtmaterialtoggleplugin.h qtmaterialflatbutton_p.h
 
-SOURCES     =   qtmaterialbadgeplugin.cpp qtmaterialwidgets.cpp
-#qtmaterialsliderplugin.cpp qtmaterialappbarplugin.cpp qtmaterialautocompleteplugin.cpp qtmaterialavatarplugin.cpp
+SOURCES     =   qtmaterialbadgeplugin.cpp qtmaterialwidgets.cpp qtmaterialappbarplugin.cpp qtmaterialautocompleteplugin.cpp
+#qtmaterialsliderplugin.cpp  qtmaterialavatarplugin.cpp
 #qtmaterialcheckboxplugin.cpp qtmaterialcircularprogressplugin.cpp qtmaterialdialogplugin.cpp qtmaterialdrawerplugin.cpp
 #qtmaterialfabplugin.cpp qtmaterialflatbuttonplugin.cpp qtmaterialiconbuttonplugin.cpp qtmaterialmenuplugin.cpp
 #qtmaterialprogressplugin.cpp qtmaterialradiobuttonplugin.cpp qtmaterialraisedbuttonplugin.cpp qtmaterialscrollbarplugin.cpp
 #qtmaterialsnackbarplugin.cpp qtmaterialtabsplugin.cpp qtmaterialtextfieldplugin.cpp qtmaterialtoggleplugin.cpp
 
 RESOURCES   = icons.qrc
-LIBS        += -L. 
+LIBS        += -L.
 
 greaterThan(QT_MAJOR_VERSION, 4) {
     QT += designer
@@ -27,11 +26,12 @@ greaterThan(QT_MAJOR_VERSION, 4) {
     CONFIG += designer
 }
 
-target.path = $$[QT_INSTALL_PLUGINS]/designer
+DESTDIR     += D:/Qt/5.9.1/Tools/QtCreator/bin/plugins/designer/
+target.path =  D:/Qt/5.9.1/Tools/QtCreator/bin/plugins/designer/
 INSTALLS    += target
 
-#include(qtmaterialappbar.pri)
-#include(qtmaterialautocomplete.pri)
+include(qtmaterialappbar.pri)
+include(qtmaterialautocomplete.pri)
 #include(qtmaterialavatar.pri)
 include(qtmaterialbadge.pri)
 #include(qtmaterialcheckbox.pri)
