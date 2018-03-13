@@ -59,7 +59,7 @@ bool QtMaterialBadgePlugin::isContainer() const
 QString QtMaterialBadgePlugin::domXml() const
 {
     return "<ui language=\"c++\">\n"
-           " <widget class=\"QtMaterialBadge\" name=\"qtMaterialBadge\">\n"
+           " <widget class=\"QtMaterialBadge\" name=\"matBadge\">\n"
            "  <property name=\"geometry\">\n"
            "   <rect>\n"
            "    <x>0</x>\n"

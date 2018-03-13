@@ -6,8 +6,11 @@
 #include <QColor>
 #include <QIcon>
 
-namespace Material
+class Material : public QObject
 {
+    Q_OBJECT
+
+public:
     enum ButtonPreset {
         FlatPreset,
         CheckablePreset
@@ -314,7 +317,17 @@ namespace Material
         darkWhite,
         lightWhite
     };
-}
+
+    Q_ENUM(ButtonPreset)
+    Q_ENUM(RippleStyle)
+    Q_ENUM(OverlayStyle)
+    Q_ENUM(Role)
+    Q_ENUM(ButtonIconPlacement)
+    Q_ENUM(ProgressType)
+    Q_ENUM(AvatarType)
+    Q_ENUM(Color)
+
+};
 
 class QtMaterialThemePrivate;
 

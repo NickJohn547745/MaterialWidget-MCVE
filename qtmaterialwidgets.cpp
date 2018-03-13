@@ -1,7 +1,8 @@
 #include "qtmaterialbadgeplugin.h"
 #include "qtmaterialappbarplugin.h"
-#include "qtmaterialautocompleteplugin.h"
+#include "qtmaterialprogressplugin.h"
 
+//#include "qtmaterialautocompleteplugin.h"
 //#include "qtmaterialavatarplugin.h"
 //#include "qtmaterialcheckboxplugin.h"
 //#include "qtmaterialcircularprogressplugin.h"
@@ -11,7 +12,6 @@
 //#include "qtmaterialflatbuttonplugin.h"
 //#include "qtmaterialiconbuttonplugin.h"
 //#include "qtmaterialmenuplugin.h"
-//#include "qtmaterialprogressplugin.h"
 //#include "qtmaterialradiobuttonplugin.h"
 //#include "qtmaterialraisedbuttonplugin.h"
 //#include "qtmaterialscrollbarplugin.h"
@@ -27,9 +27,9 @@ QtMaterialWidgets::QtMaterialWidgets(QObject *parent)
 {
     m_widgets.append(new QtMaterialAppBarPlugin(this));
     m_widgets.append(new QtMaterialBadgePlugin(this));
-    m_widgets.append(new QtMaterialAutoCompletePlugin(this));
+    m_widgets.append(new QtMaterialProgressPlugin(this));
 
-    /*
+    /*m_widgets.append(new QtMaterialAutoCompletePlugin(this));
     m_widgets.append(new QtMaterialAvatarPlugin(this));
     m_widgets.append(new QtMaterialCheckBoxPlugin(this));
     m_widgets.append(new QtMaterialCircularProgressPlugin(this));
@@ -39,7 +39,6 @@ QtMaterialWidgets::QtMaterialWidgets(QObject *parent)
     m_widgets.append(new QtMaterialFlatButtonPlugin(this));
     m_widgets.append(new QtMaterialIconButtonPlugin(this));
     m_widgets.append(new QtMaterialMenuPlugin(this));
-    m_widgets.append(new QtMaterialProgressPlugin(this));
     m_widgets.append(new QtMaterialRadioButtonPlugin(this));
     m_widgets.append(new QtMaterialRaisedButtonPlugin(this));
     m_widgets.append(new QtMaterialScrollBarPlugin(this));

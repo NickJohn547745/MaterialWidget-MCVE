@@ -59,7 +59,7 @@ bool QtMaterialAppBarPlugin::isContainer() const
 QString QtMaterialAppBarPlugin::domXml() const
 {
     return "<ui language=\"c++\">\n"
-           " <widget class=\"QtMaterialAppBar\" name=\"qtMaterialAppBar\">\n"
+           " <widget class=\"QtMaterialAppBar\" name=\"matAppBar\">\n"
            "  <property name=\"geometry\">\n"
            "   <rect>\n"
            "    <x>0</x>\n"
