@@ -1,5 +1,5 @@
-HEADERS += qtmaterialautocomplete.h \
-    $$PWD/qtmaterialautocomplete_p.h \
-    $$PWD/qtmaterialautocomplete_internal.h
-SOURCES += qtmaterialautocomplete.cpp \
-    $$PWD/qtmaterialautocomplete_internal.cpp
+HEADERS += $$PWD/../include/qtmaterialautocomplete.h \
+    $$PWD/../include/qtmaterialautocomplete_p.h \
+    $$PWD/../include/qtmaterialautocomplete_internal.h
+SOURCES += $$PWD/../src/qtmaterialautocomplete.cpp \
+    $$PWD/../src/qtmaterialautocomplete_internal.cpp

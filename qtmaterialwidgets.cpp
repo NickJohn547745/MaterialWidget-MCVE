@@ -1,26 +1,25 @@
-#include "qtmaterialbadgeplugin.h"
-#include "qtmaterialappbarplugin.h"
-#include "qtmaterialprogressplugin.h"
-
-//#include "qtmaterialautocompleteplugin.h"
-//#include "qtmaterialavatarplugin.h"
-//#include "qtmaterialcheckboxplugin.h"
-//#include "qtmaterialcircularprogressplugin.h"
-//#include "qtmaterialdialogplugin.h"
-//#include "qtmaterialdrawerplugin.h"
-//#include "qtmaterialfabplugin.h"
-//#include "qtmaterialflatbuttonplugin.h"
-//#include "qtmaterialiconbuttonplugin.h"
-//#include "qtmaterialmenuplugin.h"
-//#include "qtmaterialradiobuttonplugin.h"
-//#include "qtmaterialraisedbuttonplugin.h"
-//#include "qtmaterialscrollbarplugin.h"
-//#include "qtmaterialsliderplugin.h"
-//#include "qtmaterialsnackbarplugin.h"
-//#include "qtmaterialtabsplugin.h"
-//#include "qtmaterialtextfieldplugin.h"
-//#include "qtmaterialtoggleplugin.h"
-#include "qtmaterialwidgets.h"
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialbadgeplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialappbarplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialprogressplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialtextfieldplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialautocompleteplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialavatarplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialcheckboxplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialcircularprogressplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialdialogplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialdrawerplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialfabplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialflatbuttonplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialiconbuttonplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialmenuplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialradiobuttonplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialraisedbuttonplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialscrollbarplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialsliderplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialsnackbarplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialtabsplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialtoggleplugin.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialwidgets.h>
 
 QtMaterialWidgets::QtMaterialWidgets(QObject *parent)
     : QObject(parent)
@@ -28,8 +27,8 @@ QtMaterialWidgets::QtMaterialWidgets(QObject *parent)
     m_widgets.append(new QtMaterialAppBarPlugin(this));
     m_widgets.append(new QtMaterialBadgePlugin(this));
     m_widgets.append(new QtMaterialProgressPlugin(this));
-
-    /*m_widgets.append(new QtMaterialAutoCompletePlugin(this));
+    m_widgets.append(new QtMaterialTextFieldPlugin(this));
+    m_widgets.append(new QtMaterialAutoCompletePlugin(this));
     m_widgets.append(new QtMaterialAvatarPlugin(this));
     m_widgets.append(new QtMaterialCheckBoxPlugin(this));
     m_widgets.append(new QtMaterialCircularProgressPlugin(this));
@@ -41,12 +40,11 @@ QtMaterialWidgets::QtMaterialWidgets(QObject *parent)
     m_widgets.append(new QtMaterialMenuPlugin(this));
     m_widgets.append(new QtMaterialRadioButtonPlugin(this));
     m_widgets.append(new QtMaterialRaisedButtonPlugin(this));
-    m_widgets.append(new QtMaterialScrollBarPlugin(this));
+    //m_widgets.append(new QtMaterialScrollBarPlugin(this));
     m_widgets.append(new QtMaterialSliderPlugin(this));
     m_widgets.append(new QtMaterialSnackBarPlugin(this));
     m_widgets.append(new QtMaterialTabsPlugin(this));
-    m_widgets.append(new QtMaterialTextFieldPlugin(this));
-    m_widgets.append(new QtMaterialTogglePlugin(this));*/
+    m_widgets.append(new QtMaterialTogglePlugin(this));
 
 }
 

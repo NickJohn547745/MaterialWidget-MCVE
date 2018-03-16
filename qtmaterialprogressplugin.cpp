@@ -1,5 +1,5 @@
-#include "qtmaterialprogress.h"
-#include "qtmaterialprogressplugin.h"
+#include <QtMaterialWidgets/include/qtmaterialprogress.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialprogressplugin.h>
 
 #include <QtPlugin>
 
@@ -74,6 +74,6 @@ QString QtMaterialProgressPlugin::domXml() const
 
 QString QtMaterialProgressPlugin::includeFile() const
 {
-    return QLatin1String("<QtMaterialWidgets/qtmaterialprogress.h>");
+    return QLatin1String("<QtMaterialWidgets/include/qtmaterialprogress.h>");
 }
 

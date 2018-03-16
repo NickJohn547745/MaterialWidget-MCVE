@@ -1,26 +1,26 @@
-HEADERS +=  qtmaterialtheme_p.h \
-            qtmaterialtheme.h \
-            qtmaterialcheckable.h \
-            qtmaterialstyle.h \
-            qtmaterialstyle_p.h \
-            qtmaterialcheckable_internal.h \
-            qtmaterialcheckable_p.h \
-            qtmaterialoverlaywidget.h \
-            qtmaterialripple.h \
-            qtmaterialrippleoverlay.h \
-            qtmaterialstatetransition.h \
-            qtmaterialstatetransitionevent.h \
-    $$PWD/qtmaterialsnackbarlayout.h \
-    $$PWD/qtmaterialsnackbarlayout_p.h
+HEADERS +=  $$PWD/../include/qtmaterialtheme_p.h \
+            $$PWD/../include/qtmaterialtheme.h \
+            $$PWD/../include/qtmaterialcheckable.h \
+            $$PWD/../include/qtmaterialstyle.h \
+            $$PWD/../include/qtmaterialstyle_p.h \
+            $$PWD/../include/qtmaterialcheckable_internal.h \
+            $$PWD/../include/qtmaterialcheckable_p.h \
+            $$PWD/../include/qtmaterialoverlaywidget.h \
+            $$PWD/../include/qtmaterialripple.h \
+            $$PWD/../include/qtmaterialrippleoverlay.h \
+            $$PWD/../include/qtmaterialstatetransition.h \
+            $$PWD/../include/qtmaterialstatetransitionevent.h \
+    $$PWD/../include/qtmaterialsnackbarlayout.h \
+    $$PWD/../include/qtmaterialsnackbarlayout_p.h
 
 
 
-SOURCES +=  qtmaterialtheme.cpp \
-            qtmaterialcheckable_internal.cpp \
-            qtmaterialcheckable.cpp \
-            qtmaterialoverlaywidget.cpp \
-            qtmaterialripple.cpp \
-            qtmaterialrippleoverlay.cpp \
-            qtmaterialstatetransition.cpp \
-            qtmaterialstyle.cpp \
-    $$PWD/qtmaterialsnackbarlayout.cpp
+SOURCES +=  $$PWD/../src/qtmaterialtheme.cpp \
+            $$PWD/../src/qtmaterialcheckable_internal.cpp \
+            $$PWD/../src/qtmaterialcheckable.cpp \
+            $$PWD/../src/qtmaterialoverlaywidget.cpp \
+            $$PWD/../src/qtmaterialripple.cpp \
+            $$PWD/../src/qtmaterialrippleoverlay.cpp \
+            $$PWD/../src/qtmaterialstatetransition.cpp \
+            $$PWD/../src/qtmaterialstyle.cpp \
+    $$PWD/../src/qtmaterialsnackbarlayout.cpp

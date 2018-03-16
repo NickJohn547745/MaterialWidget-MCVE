@@ -1,5 +1,5 @@
-HEADERS += qtmaterialprogress.h \
-    $$PWD/qtmaterialprogress_internal.h \
-    $$PWD/qtmaterialprogress_p.h
-SOURCES += qtmaterialprogress.cpp \
-    $$PWD/qtmaterialprogress_internal.cpp
+HEADERS += $$PWD/../include/qtmaterialprogress.h \
+    $$PWD/../include/qtmaterialprogress_internal.h \
+    $$PWD/../include/qtmaterialprogress_p.h
+SOURCES += $$PWD/../src/qtmaterialprogress.cpp \
+    $$PWD/../src/qtmaterialprogress_internal.cpp

@@ -1,5 +1,5 @@
-#include "qtmaterialappbar.h"
-#include "qtmaterialappbarplugin.h"
+#include <QtMaterialWidgets/include/qtmaterialappbar.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialappbarplugin.h>
 
 #include <QtPlugin>
 
@@ -74,6 +74,6 @@ QString QtMaterialAppBarPlugin::domXml() const
 
 QString QtMaterialAppBarPlugin::includeFile() const
 {
-    return QLatin1String("<QtMaterialWidgets/qtmaterialappbar.h>");
+    return QLatin1String("<QtMaterialWidgets/include/qtmaterialappbar.h>");
 }
 

@@ -1,5 +1,5 @@
-#include "qtmaterialbadge.h"
-#include "qtmaterialbadgeplugin.h"
+#include <QtMaterialWidgets/include/qtmaterialbadge.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialbadgeplugin.h>
 
 #include <QtPlugin>
 
@@ -80,9 +80,5 @@ QString QtMaterialBadgePlugin::domXml() const
 
 QString QtMaterialBadgePlugin::includeFile() const
 {
-    return QLatin1String("<QtMaterialWidgets/qtmaterialbadge.h>");
+    return QLatin1String("<QtMaterialWidgets/include/qtmaterialbadge.h>");
 }
-
-#if QT_VERSION < 0x050000
-Q_EXPORT_PLUGIN2(qtmaterialbadgeplugin, QtMaterialBadgePlugin)
-#endif // QT_VERSION < 0x050000

@@ -1,5 +1,5 @@
-#include "qtmaterialautocomplete.h"
-#include "qtmaterialautocompleteplugin.h"
+#include <QtMaterialWidgets/include/qtmaterialautocomplete.h>
+#include <QtMaterialWidgets/Material-Widget-Plugin/qtmaterialautocompleteplugin.h>
 
 #include <QtPlugin>
 
@@ -59,7 +59,7 @@ bool QtMaterialAutoCompletePlugin::isContainer() const
 QString QtMaterialAutoCompletePlugin::domXml() const
 {
     return "<ui language=\"c++\">\n"
-           " <widget class=\"QtMaterialAutoComplete\" name=\"qtMaterialAutoComplete\">\n"
+           " <widget class=\"QtMaterialAutoComplete\" name=\"matAutoComplete\">\n"
            "  <property name=\"geometry\">\n"
            "   <rect>\n"
            "    <x>0</x>\n"
@@ -74,6 +74,6 @@ QString QtMaterialAutoCompletePlugin::domXml() const
 
 QString QtMaterialAutoCompletePlugin::includeFile() const
 {
-    return QLatin1String("<QtMaterialWidgets/qtmaterialautocomplete.h>");
+    return QLatin1String("<QtMaterialWidgets/include/qtmaterialautocomplete.h>");
 }
 
